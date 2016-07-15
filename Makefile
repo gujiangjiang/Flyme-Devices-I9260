@@ -135,7 +135,8 @@ board_modify_apps := TeleService \
                      Telecom \
                      FlymeLauncher \
                      MmsService \
-                     TelephonyProvider
+                     TelephonyProvider \
+                     Camera
 
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the board framework jar.
