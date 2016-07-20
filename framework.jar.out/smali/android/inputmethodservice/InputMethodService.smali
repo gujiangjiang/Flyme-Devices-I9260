@@ -4363,24 +4363,21 @@
 
     iput-object v0, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
-    .line 1222
     :cond_0
+    invoke-static/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->setFlymeSystle(Landroid/inputmethodservice/InputMethodService;)V
+
     const/4 v0, 0x0
 
     invoke-virtual {p0, v0}, Landroid/inputmethodservice/InputMethodService;->startExtractingText(Z)V
 
-    .line 1228
     :goto_0
     return-void
 
-    .line 1224
     :cond_1
     iput-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractEditText:Landroid/inputmethodservice/ExtractEditText;
 
-    .line 1225
     iput-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAccessories:Landroid/view/ViewGroup;
 
-    .line 1226
     iput-object v2, p0, Landroid/inputmethodservice/InputMethodService;->mExtractAction:Landroid/widget/Button;
 
     goto :goto_0
