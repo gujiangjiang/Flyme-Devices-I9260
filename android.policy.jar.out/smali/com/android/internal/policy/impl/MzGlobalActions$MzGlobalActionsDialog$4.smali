@@ -43,6 +43,7 @@
     .prologue
     const/4 v4, 0x1
 
+    .line 353
     iget-object v0, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog$4;->this$1:Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
@@ -54,6 +55,7 @@
 
     if-nez v0, :cond_0
 
+    .line 354
     iget-object v0, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog$4;->this$1:Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
@@ -61,6 +63,7 @@
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mShutdownOrReboot:Z
     invoke-static {v0, v4}, Lcom/android/internal/policy/impl/MzGlobalActions;->access$1002(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
 
+    .line 355
     iget-object v0, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog$4;->this$1:Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v0, v0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;

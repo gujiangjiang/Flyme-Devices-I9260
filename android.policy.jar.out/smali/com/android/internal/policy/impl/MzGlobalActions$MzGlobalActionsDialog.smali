@@ -884,12 +884,14 @@
 
     if-lt v11, v2, :cond_1
 
+    .line 503
     :cond_0
     iget-object v2, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
 
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
     invoke-static {v2, v13}, Lcom/android/internal/policy/impl/MzGlobalActions;->access$1302(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
 
+    .line 507
     .end local v9    # "decor":Landroid/view/View;
     .end local v10    # "eventX":I
     .end local v11    # "eventY":I
@@ -982,19 +984,23 @@
 
     if-eqz v2, :cond_3
 
+    .line 522
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->cancel()V
 
+    .line 524
     :cond_3
     iget-object v2, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
 
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
     invoke-static {v2, v12}, Lcom/android/internal/policy/impl/MzGlobalActions;->access$1302(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
 
+    .line 525
     iget-object v2, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
 
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mIntercepted:Z
     invoke-static {v2, v12}, Lcom/android/internal/policy/impl/MzGlobalActions;->access$1402(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
 
+    .line 529
     .end local v8    # "action":I
     :cond_4
     invoke-super {p0, p1}, Landroid/app/Dialog;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
@@ -1035,14 +1041,17 @@
 
     if-eqz v3, :cond_7
 
+    .line 522
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->cancel()V
 
+    .line 524
     :cond_7
     iget-object v3, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
 
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
     invoke-static {v3, v12}, Lcom/android/internal/policy/impl/MzGlobalActions;->access$1302(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
 
+    .line 525
     iget-object v3, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
 
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mIntercepted:Z
@@ -1066,14 +1075,17 @@
 
     if-eqz v3, :cond_8
 
+    .line 522
     invoke-virtual {p0}, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->cancel()V
 
+    .line 524
     :cond_8
     iget-object v3, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
 
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
     invoke-static {v3, v12}, Lcom/android/internal/policy/impl/MzGlobalActions;->access$1302(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
 
+    .line 525
     iget-object v3, p0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;->this$0:Lcom/android/internal/policy/impl/MzGlobalActions;
 
     # setter for: Lcom/android/internal/policy/impl/MzGlobalActions;->mIntercepted:Z

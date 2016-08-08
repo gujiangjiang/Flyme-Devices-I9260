@@ -68,105 +68,12 @@
     return-void
 .end method
 
-.method static synthetic access$1300(Lcom/android/internal/policy/impl/MzGlobalActions;)Z
-    .locals 1
-    .param p0, "x0"    # Lcom/android/internal/policy/impl/MzGlobalActions;
-
-    .prologue
-    iget-boolean v0, p0, Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
-
-    return v0
-.end method
-
-.method static synthetic access$1302(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
-    .locals 0
-    .param p0, "x0"    # Lcom/android/internal/policy/impl/MzGlobalActions;
-    .param p1, "x1"    # Z
-
-    .prologue
-    iput-boolean p1, p0, Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
-
-    return p1
-.end method
-
-.method static synthetic access$600()Landroid/content/Context;
-    .locals 1
-
-    .prologue
-    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mContext:Landroid/content/Context;
-
-    return-object v0
-.end method
-
-.method public static getInstance(Landroid/content/Context;Landroid/view/WindowManagerPolicy$WindowManagerFuncs;)Lcom/android/internal/policy/impl/MzGlobalActions;
-    .locals 1
-    .param p0, "context"    # Landroid/content/Context;
-    .param p1, "windowManagerFuncs"    # Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
-
-    .prologue
-    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mInstance:Lcom/android/internal/policy/impl/MzGlobalActions;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/android/internal/policy/impl/MzGlobalActions;
-
-    invoke-direct {v0, p0, p1}, Lcom/android/internal/policy/impl/MzGlobalActions;-><init>(Landroid/content/Context;Landroid/view/WindowManagerPolicy$WindowManagerFuncs;)V
-
-    sput-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mInstance:Lcom/android/internal/policy/impl/MzGlobalActions;
-
-    :cond_0
-    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mInstance:Lcom/android/internal/policy/impl/MzGlobalActions;
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public showGlobalActionsDialog()V
-    .locals 3
-
-    .prologue
-    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
-
-    if-nez v0, :cond_0
-
-    new-instance v0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;
-
-    sget-object v1, Lcom/android/internal/policy/impl/MzGlobalActions;->mContext:Landroid/content/Context;
-
-    sget v2, Lcom/flyme/internal/R$style;->GlobalActionsDialog:I
-
-    invoke-direct {v0, p0, v1, v2}, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;-><init>(Lcom/android/internal/policy/impl/MzGlobalActions;Landroid/content/Context;I)V
-
-    sput-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
-
-    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
-
-    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
-
-    move-result-object v0
-
-    const/high16 v1, 0x10000
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
-
-    :cond_0
-    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
-
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
-
-    return-void
-.end method
-
 .method static synthetic access$1000(Lcom/android/internal/policy/impl/MzGlobalActions;)Z
     .locals 1
     .param p0, "x0"    # Lcom/android/internal/policy/impl/MzGlobalActions;
 
     .prologue
+    .line 66
     iget-boolean v0, p0, Lcom/android/internal/policy/impl/MzGlobalActions;->mShutdownOrReboot:Z
 
     return v0
@@ -178,6 +85,7 @@
     .param p1, "x1"    # Z
 
     .prologue
+    .line 66
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/MzGlobalActions;->mShutdownOrReboot:Z
 
     return p1
@@ -217,6 +125,29 @@
     return v0
 .end method
 
+.method static synthetic access$1300(Lcom/android/internal/policy/impl/MzGlobalActions;)Z
+    .locals 1
+    .param p0, "x0"    # Lcom/android/internal/policy/impl/MzGlobalActions;
+
+    .prologue
+    .line 66
+    iget-boolean v0, p0, Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
+
+    return v0
+.end method
+
+.method static synthetic access$1302(Lcom/android/internal/policy/impl/MzGlobalActions;Z)Z
+    .locals 0
+    .param p0, "x0"    # Lcom/android/internal/policy/impl/MzGlobalActions;
+    .param p1, "x1"    # Z
+
+    .prologue
+    .line 66
+    iput-boolean p1, p0, Lcom/android/internal/policy/impl/MzGlobalActions;->mCancelOnUp:Z
+
+    return p1
+.end method
+
 .method static synthetic access$1400(Lcom/android/internal/policy/impl/MzGlobalActions;)Z
     .locals 1
     .param p0, "x0"    # Lcom/android/internal/policy/impl/MzGlobalActions;
@@ -238,4 +169,86 @@
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/MzGlobalActions;->mIntercepted:Z
 
     return p1
+.end method
+
+.method static synthetic access$600()Landroid/content/Context;
+    .locals 1
+
+    .prologue
+    .line 66
+    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method public static getInstance(Landroid/content/Context;Landroid/view/WindowManagerPolicy$WindowManagerFuncs;)Lcom/android/internal/policy/impl/MzGlobalActions;
+    .locals 1
+    .param p0, "context"    # Landroid/content/Context;
+    .param p1, "windowManagerFuncs"    # Landroid/view/WindowManagerPolicy$WindowManagerFuncs;
+
+    .prologue
+    .line 89
+    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mInstance:Lcom/android/internal/policy/impl/MzGlobalActions;
+
+    if-nez v0, :cond_0
+
+    .line 90
+    new-instance v0, Lcom/android/internal/policy/impl/MzGlobalActions;
+
+    invoke-direct {v0, p0, p1}, Lcom/android/internal/policy/impl/MzGlobalActions;-><init>(Landroid/content/Context;Landroid/view/WindowManagerPolicy$WindowManagerFuncs;)V
+
+    sput-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mInstance:Lcom/android/internal/policy/impl/MzGlobalActions;
+
+    .line 92
+    :cond_0
+    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mInstance:Lcom/android/internal/policy/impl/MzGlobalActions;
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public showGlobalActionsDialog()V
+    .locals 3
+
+    .prologue
+    .line 96
+    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
+
+    if-nez v0, :cond_0
+
+    .line 97
+    new-instance v0, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;
+
+    sget-object v1, Lcom/android/internal/policy/impl/MzGlobalActions;->mContext:Landroid/content/Context;
+
+    sget v2, Lcom/flyme/internal/R$style;->GlobalActionsDialog:I
+
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/internal/policy/impl/MzGlobalActions$MzGlobalActionsDialog;-><init>(Lcom/android/internal/policy/impl/MzGlobalActions;Landroid/content/Context;I)V
+
+    sput-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
+
+    .line 99
+    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    const/high16 v1, 0x10000
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setSystemUiVisibility(I)V
+
+    .line 102
+    :cond_0
+    sget-object v0, Lcom/android/internal/policy/impl/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
+
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+
+    .line 103
+    return-void
 .end method
