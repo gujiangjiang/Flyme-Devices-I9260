@@ -41,7 +41,7 @@ vendor_modify_images := boot
 # You can configure the directory name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
 vendor_remove_dirs := addon.d \
-		      tts \
+		                tts \
                       etc/init.d \
                       media/audio
 
@@ -52,7 +52,6 @@ vendor_remove_dirs := addon.d \
 #-----------------------------------------------------------------------------
 vendor_remove_files := recovery-from-boot.p \
                        etc/recovery-resource.dat \
-                       etc/NOTICE.html.gz \
                        etc/CHANGELOG-CM.txt \
                        etc/CHANGES.txt \
                        bin/bugreport \
@@ -64,16 +63,16 @@ vendor_remove_files := recovery-from-boot.p \
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
 vendor_saved_apps := Bluetooth \
-		     Nfc \
-		     KeyChain \
-		     Tag \
-		     UserDictionaryProvider \
-		     BackupRestoreConfirmation \
-		     FusedLocation \
-		     ExternalStorageProvider \
-		     InputDevices \
-		     ProxyHandler \
-		     DefaultContainerService
+		               Nfc \
+		               KeyChain \
+		               Tag \
+		               UserDictionaryProvider \
+		               BackupRestoreConfirmation \
+		               FusedLocation \
+		               ExternalStorageProvider \
+		               InputDevices \
+		               ProxyHandler \
+		               DefaultContainerService
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -92,10 +91,10 @@ vendor_saved_apps := Bluetooth \
 # and then you can make it by:   make android.policy
 #-----------------------------------------------------------------------------
 vendor_modify_jars := android.policy \
-		      framework \
-		      services \
-		      telephony-common \
-		      wifi-service
+		                framework \
+		                services \
+		                telephony-common \
+		                wifi-service
 
 ##############################################################################
 # The value decides which board system directory you want to save.
@@ -166,7 +165,8 @@ board_modify_apps := TeleService \
 # You should configure the property according to your device and your ID with replace the "Nexus-5_Unofficial".
 override_property += \
     ro.flyme.romer=Gujiangjiang \
-    ro.product.model_romer=GT-I9260_Gujiangjiang
+    ro.product.model_romer=GT-I9260_Gujiangjiang \
+    persist.systemui.static_blur=false
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
